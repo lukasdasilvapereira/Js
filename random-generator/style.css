@@ -1,0 +1,20 @@
+body {
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#myButton {
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+#myButton:hover {
+    background-color: blue;
+    color: black;
+    transition: 0.5s;
+}
