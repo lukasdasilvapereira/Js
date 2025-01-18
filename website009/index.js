@@ -1,3 +1,4 @@
+
 // String slicing = creating a substring from a portion of a string
 
 // string.slice(start, end)
@@ -11,4 +12,3 @@ let extension = email.slice(email.indexOf("s") + 1)
 console.log(username)
 
 console.log(extension)
-
