@@ -12,6 +12,6 @@ console.log(min)
 let fruits = ["apple", "orange", "coconut"]
 let vegetables = ["carrots", "potatoes", "celery"]
 
-let foods = [...fruits, ...vegetables]
+let foods = [...fruits, ...vegetables, "eggs", "milk"]
 
 console.log(foods)
