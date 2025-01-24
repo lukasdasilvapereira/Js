@@ -1,17 +1,17 @@
-// SPREAD => ... O spread serve para separar elementos ou juntar eles
+// DIFERENÇAS ENTRE REST E SPREAD
+// SPREAD : ESPALHAR ( DECOMPÕE ELEMENTOS DE ARRAY OU OBJETOS)
+// REST : JUNTA OS ELEMENTOS QUE SOBRAM
 
+// REST COM ARRAYS
 
-let numbers = [1 , 2 , 3 , 4 , 5 , 6]
+const numeros = ['1', '2', '3', '4', '5']
+const maisnumeros = [...numeros, "6", "7"]
 
-let max = Math.max(...numbers)
-let min = Math.min(...numbers)
+console.log(maisnumeros)
 
-console.log(max)
-console.log(min)
+// REST COM OBJETOS
 
-let fruits = ["apple", "orange", "coconut"]
-let vegetables = ["carrots", "potatoes", "celery"]
-
-let foods = [...fruits, ...vegetables, "eggs", "milk"]
-
-console.log(foods)
+const pessoa = { nome: 'João', idade: 25, cidade: 'São Paulo' };
+const { nome, ...resto } = pessoa; // O `rest` junta as propriedades que sobraram
+console.log(nome);  // 'João'
+console.log(resto); // { idade: 25, cidade: 'São Paulo' }
